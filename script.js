@@ -14,14 +14,32 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     }
 });
 
-document.getElementById('donationForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var amount = document.getElementById('amount').value;
-    // You can add logic to process the donation here, like sending it to a server
-    alert('Thank you for your donation of $' + amount);
+document.getElementById('signupBtn').addEventListener('click', function() {
+    document.getElementById('loginContainer').style.display = 'none';
+    document.getElementById('signupContainer').style.display = 'block';
 });
 
-document.getElementById('signupBtn').addEventListener('click', function() {
-    // Redirect to the sign-up page or display a sign-up modal
-    alert('Redirecting to Sign Up Page...');
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Dummy signup logic, you should implement real signup logic here
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('emailSignup').value;
+    var phone = document.getElementById('phone').value;
+    var password = document.getElementById('passwordSignup').value;
+
+    // Process signup data
+    console.log('Full Name: ' + fullName);
+    console.log('Email: ' + email);
+    console.log('Phone Number: ' + phone);
+    console.log('Password: ' + password);
+});
+
+document.getElementById('googleSignup').addEventListener('click', function() {
+    // Implement Google sign up logic
+    alert('Signing up with Google...');
+});
+
+document.getElementById('facebookSignup').addEventListener('click', function() {
+    // Implement Facebook sign up logic
+    alert('Signing up with Facebook...');
 });
