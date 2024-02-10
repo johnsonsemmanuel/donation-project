@@ -43,3 +43,8 @@ document.getElementById('facebookSignup').addEventListener('click', function() {
     // Implement Facebook sign up logic
     alert('Signing up with Facebook...');
 });
+
+document.getElementById('whyDonateBtn').addEventListener('click', function() {
+    // Add functionality for "Why Donate?" button
+    alert('Why Donate? Learn more about supporting local businesses.');
+});

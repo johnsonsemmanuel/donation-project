@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Script</title>
-    <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="./syle.css">
 </head>
 <body>
+    <div class="hero">
+        <h1>Welcome to our Donation Platform</h1>
+        <p>Help support local businesses. Every contribution makes a difference!</p>
+        <button id="whyDonateBtn">Why Donate?</button>
+    </div>
+
     <div class="container" id="loginContainer">
         <h2>Login</h2>
         <form id="loginForm">
@@ -34,6 +40,15 @@
         </form>
         <button id="googleSignup">Sign Up with Google</button>
         <button id="facebookSignup">Sign Up with Facebook</button>
+    </div>
+
+    <div class="container" id="donationContainer" style="display: none;">
+        <h2>Make a Donation</h2>
+        <form id="donationForm">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required>
+            <input type="submit" value="Donate">
+        </form>
     </div>
 
     <script src="script.js"></script>
