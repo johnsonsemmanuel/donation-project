@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Script</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+        <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <div class="container" id="donationContainer" style="display: none;">
+        <h2>Make a Donation</h2>
+        <form id="donationForm">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required>
+            <input type="submit" value="Donate">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
